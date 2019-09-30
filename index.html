@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Virtual Life</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <link rel="stylesheet" href="styles.css" />  
+    
+        <style>
+                * {box-sizing: border-box;}
+                body {font-family: Verdana, sans-serif;}
+                .mySlides {display: none;}
+                img {vertical-align: middle;}
+                
+                /* Slideshow container */
+                .slideshow-container {
+                  max-width: 1000px;
+                  position: relative;
+                  margin: auto;
+                }
+                
+                /* Caption text */
+                .text {
+                  color: #f2f2f2;
+                  font-size: 15px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  bottom: 8px;
+                  width: 100%;
+                  text-align: center;
+                }
+                
+                /* Number text (1/4 etc) */
+                .numbertext {
+                  color: #f2f2f2;
+                  font-size: 12px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  top: 0;
+                }
+                
+                /* The dots/bullets/indicators */
+                .dot {
+                  height: 15px;
+                  width: 15px;
+                  margin: 0 2px;
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                  transition: background-color 0.6s ease;
+                }
+                
+                .active {
+                  background-color: #CCD1D1;
+                }
+                
+                /* Fading animation */
+                .fade {
+                  -webkit-animation-name: fade;
+                  -webkit-animation-duration: 1.5s;
+                  animation-name: fade;
+                  animation-duration: 1.5s;
+                }
+                
+                @-webkit-keyframes fade {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+                }
+                
+                @keyframes fade {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+                }
+                
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) {
+                  .text {font-size: 11px}
+                }
+        </style>
+    </head>
+    <body>
+    <header>
+    <img src="images/logo.svg" alt="logo" title="logo">
+    <nav>
+        <ul class="nav__links">
+
+            <li><a href="Pages/Web.html">Web</a></li>
+            <li><a href="Pages/Programming.html">Programming</a></li>
+            <li><a href="Pages/MobileDevices.html">Mobile Devices</a></li>
+            <li><a href="Pages/ComputerSkills.html">Computer Skills</a></li>
+            <li><a href="Pages/Collaboration.html">Collaboration</a></li>
+            
+        </ul>    
+    </nav>
+    <a href="Pages/Contact.html"><button class= "drpbtn">Contact</button>
+    </header>
+    
+     <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <img src="images/pic1.jpg" alt="slide1" style="width:100%;">
+              <div class="text">Synergism</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/pic2.jpg" alt="slide2" style="width:100%;">
+              <div class="text">Innovation</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/pic3.jpg" alt="slide3" style="width:100%;">
+              <div class="text">Ambition</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Computer.jpg" alt="slide4" style="width:100%;">
+                <div class="text">Create</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+</body>    
+</html>
+
