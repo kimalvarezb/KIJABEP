@@ -7,7 +7,7 @@
         <meta name="description" content>
         <meta name="viewport" content="width=device-width, initial scale=1">
         <link rel="stylesheet" href="styles.css" />  
-    
+        <link href="images/fun_burned.png" rel="icon" type="image/x-icon" />
         <style>
                 * {box-sizing: border-box;}
                 body {font-family: Verdana, sans-serif;}
@@ -80,7 +80,7 @@
                 }
         </style>
     </head>
-    <body>
+  <body>
     <header>
     <img src="images/logo.svg" alt="logo" title="logo">
     <nav>
@@ -91,14 +91,17 @@
             <li><a href="Pages/MobileDevices.html">Mobile Devices</a></li>
             <li><a href="Pages/ComputerSkills.html">Computer Skills</a></li>
             <li><a href="Pages/Collaboration.html">Collaboration</a></li>
-            <li><a href="Pages/Contact.html">Contact</li>
-        </ul>    
+            
+        </ul>   
+       
     </nav>
-    
+    <form style="display: inline" action="Pages/Contact.html" method="get">
+      <button>Log in</button>
+    </form>
+     
     </header>
     
      <div class="slideshow-container">
-            
             <div class="mySlides fade">
               <img src="images/pic1.jpg" alt="slide1" style="width:100%;">
               <div class="text">Synergism</div>
@@ -127,7 +130,7 @@
               <span class="dot"></span> 
               <span class="dot"></span> 
               <span class="dot"></span> 
-            </div>
+    </div>
             
             <script>
                 var slideIndex = 0;
@@ -149,7 +152,60 @@
                   dots[slideIndex-1].className += " active";
                   setTimeout(showSlides, 2000); // Change image every 2 seconds
                 }
-                </script>
-</body>    
+            </script>
+            <br>
+            <br>
+ 
+      <!-- TABLE -->
+        <table class="content-table" style="margin:0 auto;">
+              <thead>
+                <tr>
+                  <th style="text-align:center" colspan="4">BEST LINKS TO USE IF YOU ARE A STUDENT</th>
+                </tr>
+                <tr>
+                  <th>Rank</th>
+                  <th>Name</th>
+                  <th>Photo</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+                <tr>
+                  <th>1</th>
+                  <td>Web</td>
+                  <td><img src="https://www.lifewire.com/thmb/VPHk1hVtwFOti3iQPueGU9LgHsQ=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Blogger.svg-57f268d63df78c690fe5d003.png" width="50" height="50" alt= Blogger></td>
+                  <td><a href="https://www.blogger.com/">https://www.blogger.com/</a></td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>Programming</td>
+                  <td rowspan="2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1280px-Visual_Studio_Code_1.35_icon.svg.png" width="50" height="50" alt= Visual></td>
+                  <td rowspan="2"><a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></td>
+                </tr>
+
+                <tr>
+                  <th>3</th>
+                  <td>Mobile Devices</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>Computer Skills</td>
+                    <td><img src="https://www.weheartswift.com/wp-content/uploads/2016/11/xcode-logo-small.png" width="50" height="50" alt= xcode></td>
+                    <td><a href="https://developer.apple.com/xcode/">https://developer.apple.com/xcode/</a></td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>Collaboration</td>
+                    <td><img src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" width="50" height="50" alt= discord></td>
+                    <td><a href="https://discordapp.com/">https://discordapp.com/</a></td>
+                </tr>
+                <tr class="active-row">
+                    <td colspan="2" style="color:seagreen;">MOST USEFUL WEBSITE OVERALL</td>
+                    <td><img src="images/google-logo.png" width="80" height="70" alt= discord></td>
+                    <td><a href="https://www.google.com/">https://www.google.com/</a></td>
+                
+                </tr> 
+                </table>
+       <!--END OF TABLE-->
+  </body>    
 </html>
 
