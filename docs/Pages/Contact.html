@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head> 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Virtual Life</title>
-    <meta name="description" content>
-    <meta name="viewport" content="width=device-width, initial scale=1">
-    <link rel="stylesheet" href="styles.css" />  
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Virtual Life</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <link rel="stylesheet" href="style1.css" />  
+        <link href="images/fun_burned.png" rel="icon" type="image/x-icon" />
     </head>   
+    <body>
     <header>
     <img src="images/logo.svg" alt="logo" title="logo">
     </header>
-    <body>
-        
-    <div id = "color" style = "color: white;">And this is me</div> 
-    </body>
+
+   
+
+        <form action="/action_page.php">
+    <div class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+
+        <label>Email</label><br>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label>Repeat Password</label><br>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <hr>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+        <button type="submit" class="registerbtn">Register</button>
+    </div>
+    
+    <div class="container signin">
+        <p>Already have an account? <a href="#">Sign in</a></p>
+    </div>
+</form>
+
+
+</body> 
 </html>
