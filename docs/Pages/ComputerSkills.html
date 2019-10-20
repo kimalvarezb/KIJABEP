@@ -11,9 +11,29 @@
     </head>  
     <body>   
     <header>
-    <img src="images/logo.svg" alt="logo" title="logo">
+    <a href="../index.html"><img src="images/logo.svg" alt="logo" title="logo">
     </header>
-    
-    <p> Computer Skills</p>
+
+    <!--website video-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B1T06UhcX0Q" 
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- end website video-->
+    <!--video file-->
+    <video width="400" height="400" autoplay controls>   
+    <source src="Videos/Video.mp4">
+    </video>
+    <!-- end of video file-->
+    <audio controls>
+        <source src="Videos/location.mp3" type="audio/mpeg">
+    </audio>
+    <p> The difference between 2. and 3. The video element allows a browser to play a video 
+        natively, as opposed to a plugin like flash, an iframe allows you to load the source of another url into your page.
+        video tag is simpler which gives you more control but also more work, depending on the features you want. Everything comes 
+        from the same server, so there are instances when a browser will delay loading the video, compared to an iframe which 
+        its src attribute point to a different server. It happens because most
+         browsers have a limit on the number of connections per host
+        so if there are resources still being loaded from your site, it will wait to load the video element, 
+        while it would not wait to load the iframe element since it is hosted by YouTube. 
+    </p>
     </body>
 </html>
