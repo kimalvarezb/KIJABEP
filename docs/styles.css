@@ -1,5 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Exmaple of breakpoints for media query */
+
+/* up to 480 => phones portrait */
+
+@media screen and (max-width: 480px) {
+  body {
+      background: #BFC9CA;
+  }
+  
+}
+
+
+/* 480 - 768 => phones landscape and tablets landscape */
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  body {
+      background: #BFC9CA;
+  }
+}
+
+
+/* 1024 and up => desktopand more */
+
+@media screen and (min-width: 1024px) {
+  body {
+      background: #BFC9CA;
+  }
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  max-width: 70%;
+  height: auto;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #CCD1D1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
