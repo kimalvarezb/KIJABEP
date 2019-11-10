@@ -7,43 +7,55 @@ img {vertical-align: middle;}
 
 /* Exmaple of breakpoints for media query */
 
+
 /* up to 480 => phones portrait */
 
-@media screen and (max-width: 480px) {
-  body {
-      background: #BFC9CA;
-  }
+@media screen and (max-width: 320px) {
+  .slideshow-container {
   
+    width: 170%;
+    height: auto;
+    position: relative;
+    margin: auto;
+  } 
+}
+/* 320 - 568 for iphone 5/SE*/
+@media screen and (min-width: 320px) and (max-width: 568px) {
+  .slideshow-container {
+  
+    width: 190%;
+    height: auto;
+    position: relative;
+    margin: auto;
+  }
+ 
 }
 
+/* 568 - 1024 => phones landscape and tablets landscape */
 
-/* 480 - 768 => phones landscape and tablets landscape */
-
-@media screen and (min-width: 480px) and (max-width: 1024px) {
-  body {
-      background: #BFC9CA;
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+  .slideshow-container {
+  
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
   }
 }
-
 
 /* 1024 and up => desktopand more */
 
 @media screen and (min-width: 1024px) {
-  body {
-      background: #BFC9CA;
-  }
-
-}
-
-/* Slideshow container */
-.slideshow-container {
+  .slideshow-container {
   
-  max-width: 70%;
-  height: auto;
-  position: relative;
-  margin: auto;
-
+    width: 70%;
+    height: auto;
+    position: relative;
+    margin: auto;
+  }
 }
+
+
 
 /* Caption text */
 .text {
