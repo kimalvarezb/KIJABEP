@@ -10,15 +10,7 @@ img {vertical-align: middle;}
 
 /* up to 480 => phones portrait */
 
-@media screen and (max-width: 320px) {
-  .slideshow-container {
-  
-    width: 170%;
-    height: auto;
-    position: relative;
-    margin: auto;
-  } 
-}
+
 /* 320 - 568 for iphone 5/SE*/
 @media screen and (min-width: 320px) and (max-width: 568px) {
   .slideshow-container {
