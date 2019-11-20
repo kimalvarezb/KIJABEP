@@ -1,0 +1,10 @@
+Hi Professor,
+Here are the colors that I've used:
+
+Text-Border -color: HEX #f2f2f2, RGB (242,242,242), Color Name: Very light gray.
+Background-color: HEX #BFC9CA, RGB (191,201,202), Color Name: Grayish cyan.
+Button-Log-background-color: HEX #0088a9, RGB (0,136,169), Color Name:
+Table-color: HEX #009879, RGB (0,152,121), Color Name: Dark cyan.
+Log-form-color: HEX #2196f3, RGB (33,150,243), Color Name: Vivid blue.
+Submit-button-color: HEX #4CAF50, RGB (76,175,80), Color Name: Dark moderate lime green.
+wrapper-log-color: HEX #444 RGB (68,68,68), Color Name: Very dark gray.

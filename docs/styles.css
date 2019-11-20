@@ -8,13 +8,10 @@ img {vertical-align: middle;}
 /* Exmaple of breakpoints for media query */
 
 
-/* up to 480 => phones portrait */
-
 
 /* 320 - 568 for iphone 5/SE*/
 @media screen and (min-width: 320px) and (max-width: 568px) {
   .slideshow-container {
-  
     width: 190%;
     height: auto;
     position: relative;
@@ -74,14 +71,14 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #BFC9CA;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #CCD1D1;
+  background-color: #BFC9CA;
 }
 
 /* Fading animation */
@@ -114,7 +111,7 @@ li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #f2f2f2;
     text-decoration: none;
 }
 
@@ -148,7 +145,7 @@ header {
 
 button {
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
+    background-color: rgb(0,136,169);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -179,7 +176,7 @@ button:hover {
 
   * {
     font-family: sans-serif; /* Change your font family */
-    color: white
+    color: #f2f2f2
   }
   
   .content-table {
@@ -194,7 +191,7 @@ button:hover {
   
   .content-table thead tr {
     background-color: #009879;
-    color: #ffffff;
+    color: #f2f2f2;
     text-align: left;
     font-weight: bold;
   }
@@ -205,11 +202,11 @@ button:hover {
   }
   
   .content-table tbody tr {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #BFC9CA;
   }
   
   .content-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+    background-color: #f2f2f2;
   }
   
   .content-table tbody tr:last-of-type {
@@ -246,7 +243,7 @@ button:hover {
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
-    background: #f1f1f1;
+    background: #f2f2f2;
   }
   
   input[type=text]:focus, input[type=password]:focus {
@@ -255,14 +252,14 @@ button:hover {
   
   /* Overwrite default styles of hr */
   hr {
-    border: 1px solid #f1f1f1;
+    border: 1px solid #f2f2f2;
     margin-bottom: 25px;
   }
   
   /* Set a style for the submit button */
   .registerbtn {
     background-color: #4CAF50;
-    color: white;
+    color: #f2f2f2;
     padding: 16px 20px;
     margin: 8px 0;
     border: none;
@@ -282,5 +279,87 @@ button:hover {
   }
 
 
+/* Wrapper code */
 
+body {
+  margin: 40px;
+}
+
+.sidebar {
+        grid-area: sidebar;
+    }
+
+    .sidebar2 {
+        grid-area: sidebar2;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .wrapper {
+        background-color:#BFC9CA;
+        color: #444;
+    }
+
+  .wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "sidebar"
+     "content"
+     "sidebar2"
+     "footer"
+  }
+
+    @media only screen and (min-width: 500px)  {
+    .wrapper {
+
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+    "header   header"
+        "sidebar  content"
+        "sidebar2 sidebar2"
+        "footer   footer";
+    }
+    }
+
+    @media only screen and (min-width: 600px)   {
+        .wrapper {
+      grid-gap: 20px;
+            grid-template-columns: 120px auto 120px;
+            grid-template-areas:
+      "header  header  header"
+            "sidebar content sidebar2"
+            "footer  footer  footer";
+            max-width: 600px;
+        }
+    }
+
+.box {
+  background-color: #444;
+  color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%; 
+}
+
+.header,
+.footer {
+  background-color:#BFC9CA;
+}
+
+.sidebar2 {
+  background-color: #BFC9CA;
+  color: #444;
+}
     
