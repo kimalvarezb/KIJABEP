@@ -10,9 +10,56 @@
     <link href="images/fun_burned.png" rel="icon" type="image/x-icon" />
     </head>   
     <body>
-    <header>
-    <a href="../index.html"><img src="images/logo.svg" alt="logo" title="logo">
-    </header>  
-    <div id = "color" style = "color: white;">And this is me</div> 
+        <header>
+                <a href="../index.html"><img src="images/logo.svg" alt="logo" title="logo">
+            <nav>
+                <ul class="nav__links">
+        
+                    <li><a href="Web.html">Web</a></li>
+                    <li><a href="Programming.html">Programming</a></li>
+                    <li><a href="MobileDevices.html">Mobile Devices</a></li>
+                    <li><a href="ComputerSkills.html">Computer Skills</a></li>
+                    <li><a href="Collaboration.html">About Us</a></li>
+                    
+                </ul>          
+            </nav>
+            <form style="display: inline" action="Contact.html" method="get">
+              <button>Log in</button>
+            </form>
+             
+        </header>
+        
+        <h1>WEB</h1>
+    <img src="images/web.jpg" alt="web" width="100%">
+
+    &nbsp; 
+    <p></p>
+    &nbsp; 
+    <button onclick="typeWriter()">Learn More</button>
+
+    <p id="demo"></p> 
+
+    <script>
+    var i = 0;
+    var txt = 'For WebPage and Design class I have learned a lot of important material that not only help students to create their own websites, it helps them on how software programs are used to develop websites with site navigation, page animation, and search tools.';
+    var speed = 50;
+
+    function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+    }
+    </script>
+       
+        <img src="images/color.png" class="textwrap" style="width:50%;">
+        <p>Color is one of the most powerful tools in a website design. It can be used to attract attention, express meaning, create desire, drive conversions, and even earn a customer’s loyalty. Good color choices take careful planning and when done correctly can 
+            influence how a visitor interprets what they see as much as layout and copy writing. We have broken down some of the fundamental basics on color in website design to help you understand how you can use color wisely in your business to optimize results.</p>
+           <h2><b>So why is color important in website design?</b></h2>
+            <p>Choosing the right colors for your websites design is crucial for your online success. Colors can be your most powerful tool to gain a reaction from your targeted audience. You can use colors to stir your visitors emotions or respond to a call-to-action on your 
+                website. Color helps us to process and store images more efficiently than colorless (black and white) images, this can help increase brand recognition and help prompt visitors to your sight to take action. Judgement can be subconsciously 
+                based on color schemes so your palette must not contradict your brands philosophy.</p>
+                
     </body>
 </html>
